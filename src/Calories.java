@@ -42,21 +42,21 @@ public class Calories {
 
                 switch (choice) {
                     case 1:
-                        addCalories.addCalories(connection);
+                        AddCalories.addCalories(connection);
                         break;
                     case 2:
-                        calories_today.viewCaloriesToday(connection);
+                        Сalories_today.viewCaloriesToday(connection);
                         break;
                     case 3:
                         System.out.print("Введите дату (YYYY-MM-DD): ");
                         String date = scanner.nextLine();
-                        Date_of_calories.viewCaloriesByDate(connection, date);
+                        date_of_calories.viewCaloriesByDate(connection, date);
                         break;
                     case 4:
-                        allCalories.viewAllCalories(connection);
+                        All_calories.viewAllCalories(connection);
                         break;
                     case 5:
-                        products.viewAllFood(connection);
+                        Products.viewAllFood(connection);
                         break;
                     case 6:
                         System.out.println("Выход из программы.");
