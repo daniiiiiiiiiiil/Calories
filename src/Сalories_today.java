@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 public class Сalories_today {
     public static void viewCaloriesToday(Connection connection) {
+
         String sql = "SELECT SUM(calories_consumed) AS total_calories FROM calorie_log WHERE date = CURRENT_DATE;";
         try (PreparedStatement statement = connection.prepareStatement(sql);
              ResultSet resultSet = statement.executeQuery()) {

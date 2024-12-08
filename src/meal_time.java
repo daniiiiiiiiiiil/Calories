@@ -14,22 +14,22 @@ public class meal_time {
 
             if (scanner.hasNextInt()) {
                 choice = scanner.nextInt();
-                scanner.nextLine(); // Consume newline
+                scanner.nextLine();
                 if (choice >= 1 && choice <= 4) {
-                    return choice; // Валидный выбор
+                    return choice;
                 } else {
                     System.out.println("Неверный выбор. Попробуйте снова.");
                 }
             } else {
                 System.out.println("Неверный ввод. Попробуйте снова.");
-                scanner.nextLine(); // Consume invalid input
+                scanner.nextLine();
             }
 
-        } while (true); // Цикл повторяется до тех пор, пока не будет сделан валидный выбор
+        } while (true);
 
     }
     public static String getMealTimeFromUser() {
-        int choice = getMealTimeChoice(); // Используем функцию из предыдущего ответа
+        int choice = getMealTimeChoice();
         String mealTime;
         switch (choice) {
             case 1:
