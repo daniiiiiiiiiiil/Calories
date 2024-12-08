@@ -45,8 +45,8 @@ public class Calories {
                 switch (choice) {
                     case 1:
                         Products.viewAllFood(connection);
-                        System.out.println("Введите цифру 1,если хотите записать калории на сегодня\n"
-                        +"Введите цифру 2,если хотите записать калории на какую то дату");
+                        System.out.print("Введите цифру 1,если хотите записать калории на сегодня\n"
+                        +"Введите цифру 2,если хотите записать калории на какую то дату ");
                         int choice2 = scanner.nextInt();
                         if(choice2 == 1) {
                             AddCalories.addCalories(connection);
