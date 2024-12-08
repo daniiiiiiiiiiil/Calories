@@ -13,6 +13,7 @@ public class Calories {
         date_of_calories Date_of_calories = new date_of_calories();
         All_calories allCalories = new All_calories();
         Products products = new Products();
+        AddCaloriesDay addCaloriesDay = new AddCaloriesDay();
 
         String dbUrl = settings.getDbUrl();
         String dbUser = settings.getDbUser();
@@ -42,7 +43,16 @@ public class Calories {
 
                 switch (choice) {
                     case 1:
-                        AddCalories.addCalories(connection);
+                        Products.viewAllFood(connection);
+                        System.out.println("Введите цифру 1,если хотите записать калории на сегодня\n"
+                        +"Введите цифру 2,если хотите записать калории на какую то дату");
+                        int choice2 = scanner.nextInt();
+                        if(choice2 == 1) {
+                            AddCalories.addCalories(connection);
+                        }
+                        else if(choice2 == 2){
+                            AddCaloriesDay.addCaloriesDay(connection);
+                        }
                         break;
                     case 2:
                         Сalories_today.viewCaloriesToday(connection);
