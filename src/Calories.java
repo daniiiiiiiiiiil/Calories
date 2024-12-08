@@ -15,6 +15,7 @@ public class Calories {
         Products products = new Products();
         AddCaloriesDay addCaloriesDay = new AddCaloriesDay();
 
+
         String dbUrl = settings.getDbUrl();
         String dbUser = settings.getDbUser();
         String dbPassword = settings.getDbPassword();
