@@ -59,9 +59,7 @@ public class Calories {
                         Сalories_today.viewCaloriesToday(connection);
                         break;
                     case 3:
-                        System.out.print("Введите дату (YYYY-MM-DD): ");
-                        String date = scanner.nextLine();
-                        date_of_calories.viewCaloriesByDate(connection, date);
+                        date_of_calories.viewCaloriesToday(connection);
                         break;
                     case 4:
                         All_calories.viewAllCalories(connection);
